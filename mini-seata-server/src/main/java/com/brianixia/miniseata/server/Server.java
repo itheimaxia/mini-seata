@@ -10,6 +10,7 @@ public class Server {
 
     public static void main(String[] args) {
 
+        //获取端口，可以使用-p参数
         int port = PortHelper.getPort(args);
         System.setProperty(SERVER_PORT,Integer.toString(port));
         // create logger
