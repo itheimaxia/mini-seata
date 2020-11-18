@@ -1,5 +1,6 @@
 package com.brianixia.miniseata.server;
 
+import com.brianixia.miniseata.server.netty.NettyServer;
 import com.brianxia.mini.seata.common.utils.PortHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,5 +17,7 @@ public class Server {
         // create logger
         final Logger logger = LoggerFactory.getLogger(Server.class);
         logger.info("The server is running in container.");
+        NettyServer nettyServer = new NettyServer(port);
+        nettyServer.start();
     }
 }

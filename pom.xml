@@ -10,6 +10,8 @@
     <modules>
         <module>mini-seata-server</module>
         <module>mini-seata-common</module>
+        <module>mini-seata-client</module>
+        <module>mini-seata-samples</module>
     </modules>
     <packaging>pom</packaging>
 
